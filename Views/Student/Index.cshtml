@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+I am the Student page.
+
+<h1>List Of Studens</h1>
+
+@foreach (var student in ViewData["students"] as List<string>)
+{
+
+    <li>@student</li>
+    
+}
